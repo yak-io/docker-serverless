@@ -8,7 +8,7 @@ RUN apt-get install -y build-essential groff libssl-dev libffi-dev openssl zip u
 RUN pip install --upgrade cffi==1.2.1 awscli
 
 # Serverless
-ENV SERVERLESS serverless@1.27.3
+ENV SERVERLESS serverless@1.28.0
 RUN yarn global add $SERVERLESS
 
 WORKDIR /opt/app
